@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axel Corporan - Estudiante de Informática</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0f1e;--bg2:#111936;--card:#162044;--accent:#00e5ff;--accent2:#7c4dff;--text:#e8edf7;--muted:#9aa6c3}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:rgba(10,15,30,.9);backdrop-filter:blur(10px);border-bottom:1px solid #223}
+nav{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem}
+nav strong{color:var(--accent);font-size:1.2rem}
+nav div a{color:var(--text);text-decoration:none;margin-left:1rem;font-size:.95rem}
+nav div a:hover{color:var(--accent)}
+.hero{max-width:1000px;margin:auto;padding:4rem 1rem 3rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+@media(max-width:768px){.hero{grid-template-columns:1fr}}
+.badge{display:inline-block;background:#132; border:1px solid var(--accent);color:var(--accent);padding:.3rem .8rem;border-radius:20px;font-size:.85rem;margin-bottom:1rem}
+h1{font-size:2.8rem;line-height:1.1}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);margin:1rem 0 1.5rem}
+.btn{display:inline-block;padding:.7rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:600;margin-right:.6rem}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#000}
+.btn-ghost{border:1px solid var(--accent);color:var(--accent)}
+.avatar{width:220px;height:220px;margin:auto;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:4rem;font-weight:800;color:#000}
+section{max-width:1000px;margin:auto;padding:2.5rem 1rem}
+h2{font-size:1.8rem;margin-bottom:1rem;border-left:4px solid var(--accent);padding-left:.7rem}
+.card{background:var(--card);border:1px solid #24315e;border-radius:12px;padding:1.3rem;margin:.8rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.skill{margin:.5rem 0}
+.bar{background:#0e1530;border-radius:6px;height:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.proj a{color:var(--accent);text-decoration:none;font-weight:600}
+footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid #223;margin-top:2rem}
+input,textarea{width:100%;padding:.7rem;margin:.4rem 0;border-radius:8px;border:1px solid #2a3a6b;background:#0e1530;color:#fff}
+</style>
+</head>
+<body>
+<header><nav><strong>AC.</strong><div><a href="#sobre">Sobre mí</a><a href="#skills">Skills</a><a href="#proyectos">Proyectos</a><a href="#exp">Experiencia</a><a href="#contacto">Contacto</a></div></nav></header>
+
+<div class="hero">
+<div>
+<div class="badge">Disponible para pasantías / proyectos</div>
+<h1>Hola, soy <span>Axel Corporan</span><br>Estudiante de Informática</h1>
+<p>Me apasiona la tecnología, el desarrollo web y la inteligencia artificial. Estoy construyendo mi camino como profesional IT, aprendiendo cada día y creando proyectos reales como CyberQuiz.</p>
+<a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+<a class="btn btn-ghost" href="#contacto">Contáctame</a>
+</div>
+<div><div class="avatar">AC</div></div>
+</div>
+
+<section id="sobre"><h2>Sobre mí</h2><div class="card"><p>Soy <b>Axel Corporan</b>, estudiante de informática de República Dominicana. Me enfoco en desarrollo web, soporte técnico y fundamentos de IA. Me gusta aprender haciendo: por eso creo páginas, practico Git/GitHub y exploro herramientas como OpenCode.</p><p style="margin-top:.6rem;color:var(--muted)">Objetivo: conseguir mi primera experiencia profesional en tecnología y seguir creciendo hasta ser desarrollador completo.</p></div></section>
+
+<section id="skills"><h2>Skills</h2><div class="grid">
+<div class="card"><b>HTML / CSS</b><div class="skill"><div class="bar"><i style="width:85%"></i></div></div><small>Intermedio - páginas responsive</small></div>
+<div class="card"><b>JavaScript</b><div class="skill"><div class="bar"><i style="width:65%"></i></div></div><small>Intermedio básico - interactividad</small></div>
+<div class="card"><b>Python</b><div class="skill"><div class="bar"><i style="width:60%"></i></div></div><small>Fundamentos, scripts y lógica</small></div>
+<div class="card"><b>Git / GitHub</b><div class="skill"><div class="bar"><i style="width:70%"></i></div></div><small>Repos, Pages, colaboración</small></div>
+<div class="card"><b>Soporte TI / Redes</b><div class="skill"><div class="bar"><i style="width:75%"></i></div></div><small>Mantenimiento, Windows, redes básicas</small></div>
+<div class="card"><b>IA / Prompting</b><div class="skill"><div class="bar"><i style="width:80%"></i></div></div><small>Uso de IA para estudiar y crear</small></div>
+</div></section>
+
+<section id="proyectos"><h2>Proyectos</h2><div class="grid">
+<div class="card proj"><h3>CyberQuiz</h3><p style="color:var(--muted)">Quiz interactivo de ciberseguridad, publicado en GitHub Pages.</p><a href="https://cyberquiz-website.github.io/cyberquiz/" target="_blank">Ver live →</a></div>
+<div class="card proj"><h3>Mi Portafolio</h3><p style="color:var(--muted)">Esta misma página. Hecha con HTML/CSS puro, estilo oscuro moderno.</p><a href="#">Ver código →</a></div>
+<div class="card proj"><h3>Próximo proyecto</h3><p style="color:var(--muted)">Espacio para tu próximo proyecto. Dime cuál y lo agregamos.</p><a href="#contacto">Proponer idea →</a></div>
+</div></section>
+
+<section id="exp"><h2>Experiencia / Educación</h2>
+<div class="card"><b>Estudiante de Informática</b><br><small style="color:var(--muted)">Actualidad • Formación técnica, desarrollo web, lógica de programación</small></div>
+<div class="card"><b>Proyectos personales</b><br><small style="color:var(--muted)">CyberQuiz, portafolio web, prácticas con IA y GitHub</small></div>
+<div class="card"><a class="btn btn-primary" href="CV-Axel-Corporan.pdf" download="CV-Axel-Corporan.pdf" onclick="descargarCV(event)">Descargar CV (PDF)</a> <a class="btn btn-ghost" href="CV-Axel-Corporan.pdf" target="_blank" rel="noopener" style="margin-left:.5rem">Ver CV</a></div>
+</section>
+
+<section id="contacto"><h2>Contacto</h2><div class="card">
+<p>Escríbeme para colaboraciones, pasantías o proyectos.</p>
+<p style="margin:.6rem 0">Email: <a href="mailto:axel.corporansoto09@gmail.com" style="color:var(--accent)">axel.corporansoto09@gmail.com</a><br>GitHub: <a href="https://github.com/cyberquiz-website" target="_blank" style="color:var(--accent)">github.com/cyberquiz-website</a></p>
+<form onsubmit="enviarEmail(event)">
+<input id="nombre" placeholder="Tu nombre" required><input id="email" placeholder="Tu email" type="email" required><textarea id="msg" rows="4" placeholder="Tu mensaje"></textarea>
+<button class="btn btn-primary" type="submit">Enviar mensaje</button>
+</form>
+</div></section>
+
+<footer>Hecho por Axel Corporan con El Marino • 2026</footer>
+<script>
+async function descargarCV(e){
+  e.preventDefault();
+  const url = 'CV-Axel-Corporan.pdf';
+  try{
+    const r = await fetch(url);
+    const blob = await r.blob();
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'CV-Axel-Corporan.pdf';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);
+  }catch(err){
+    // Fallback si se abre como file:// : fuerza descarga por atributo
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'CV-Axel-Corporan.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+}
+function enviarEmail(e){
+  e.preventDefault();
+  const n=document.getElementById('nombre').value;
+  const c=document.getElementById('email').value;
+  const m=document.getElementById('msg').value;
+  window.location.href=`mailto:axel.corporansoto09@gmail.com?subject=Contacto portafolio de ${encodeURIComponent(n)}&body=${encodeURIComponent(m+'\n\nResponder a: '+c)}`;
+}
+</script>
+</body>
+</html>
